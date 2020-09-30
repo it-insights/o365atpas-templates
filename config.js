@@ -10,6 +10,12 @@
 */
 
 module.exports = {
+  purgeCSS: {},
+  removeUnusedCSS: {},
+  replaceStrings: false,
+  removeAttributes: [],
+  safeClassNames: {},
+  sixHex: false,
   build: {
     templates: {
       source: 'src/templates',

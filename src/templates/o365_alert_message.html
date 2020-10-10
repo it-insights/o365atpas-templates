@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <if condition="page.css">
+      <style>
+        {{{page.css}}}
+      </style>
+    </if>
+  </head>
+
+  <body>
+    <div class="flex flex-col w-screen min-w-48 mt-16 ml-8 font-sans">
+        <div class="max-w-sm">
+            <img src="https://admin.protection.outlook.com/DataInsights/images/DianO365Logo.png" alt="">
+        </div>
+        <div class="mt-16">
+            <h1 class="font-thin text-4xl">Threat management alert has been triggered</h1>
+        </div>
+        <div class="mt-16 text-base">
+            <div>
+                <span class="text-cool-gray-300">⚠ &nbsp;</span><span>A potentially malicious URL click was detected</span>
+            </div>
+            <div class="mt-16 leading-24">
+                <span>Severity:</span>
+                <span>●</span>
+                <span class="font-light text-gray-700">High</span>
+                <br>
+                <span>Time:</span>
+                <span class="font-light text-gray-700">19/10/2020 10:01:37 AM (UTC)</span>
+                <br>
+                <span>Activity:</span>
+                <span class="font-light text-gray-700">Threat management</span>
+                <br>
+                <span>Details</span>
+                <span class="font-light text-gray-700">1 message hit on 3daeffef-d7b0-478b-cb4f-08d86c46d91b-11547266122478924737-3, sent to ${username} at time 10/9/2020 10:01:37 PM.</span>
+            </div>
+            <div>
+                <button type="button" class="inline-flex items-center mt-12 px-24 py-8 border border-transparent text-lg leading-5 font-normal text-white bg-blue-msbutton">
+                    <a class="no-underline text-white " href="${loginserverurl}">View alert details</a>
+                </button>
+            </div>
+            <div class="mt-16 mb-16 text-gray-700">
+                <span>Thank you,</span>
+                <br>
+                <span>The Office 365 Team</span>
+            </div>
+            <hr>
+            <div class="mt-12">
+                <img src="http://admin.protection.outlook.com/DataInsights/images/DianMsftLogo.png">
+                <div class="mt-12 mb-12 text-gray-600 text-xxs leading-16">
+                    <span>One Microsoft Way</span>
+                    <br>
+                    <span>Redmond, WA</span>
+                    <br>
+                    <span>98052-6399 USA</span>
+                </div>
+                <div class="text-xxs">
+                    <a href="https://privacy.microsoft.com/en-gb/privacystatement">Privacy |</a>
+                    <a href="https://www.microsoft.com/en-us/trust-center/privacy?docid=13">Legal</a>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>      
+  </body>
+</html>

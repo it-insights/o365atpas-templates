@@ -105,6 +105,7 @@ module.exports = {
           700: '#1a56db',
           800: '#1e429f',
           900: '#233876',
+          msbutton: '#2172B9',
         },
         indigo: {
           50: '#f0f5ff',

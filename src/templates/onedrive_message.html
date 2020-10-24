@@ -2,6 +2,7 @@
 title: "Onedrive message"
 messageTitle: "Sie haben Ihr OneDrive-Speicherlimit überschritten"
 messageText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aspernatur vitae eos ipsam natus corporis. Ad placeat quod qui"
+expirationDate: "12/12/2020"
 ---
 
 <extends src="src/layouts/mail.html">
@@ -30,8 +31,8 @@ messageText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosa
         <p class="leading-24">
           <span>Ihr persönliches Konto</span>         
           <span class="font-bold">${username}</span>
-          <span>nutzt 242 GB und überschreitet damit Ihr Speicherlimit von 12 GB. </span>
-          <span class="font-bold">Das Konto wird gesperrt am oder nach dem 11/20/2020 1:20:53 AM.</span>
+          <span>persönliches Konto nutzt 242 GB und überschreitet damit Ihr Speicherlimit von 12 GB. </span>
+          <span class="font-bold">Das Konto wird gesperrt am oder nach dem {{ page.formattedDate(page.expirationDate) }}.</span>
           <span>Ihre Dateien sind noch vorhanden. Jedoch können Sie Ihrem OneDrive keine neuen Dateien hinzufügen, solange Sie Ihr
           Limit überschritten haben, und Änderungen an vorhandenen Dateien werden nicht geräteübergreifend synchronisiert</span>
         </p>

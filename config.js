@@ -25,10 +25,14 @@ module.exports = {
       assets: {
         source: 'src/assets/images',
         destination: 'images'
-      },
+      }
     },
     tailwind: {
       css: 'src/assets/css/main.css'
     }
+  },
+  formattedDate(str) {
+    const date = new Date(str)
+    return date.toLocaleDateString('en-US')
   }
 }

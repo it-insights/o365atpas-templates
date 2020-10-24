@@ -1,75 +1,71 @@
-<!DOCTYPE html>
-<html>
+---
+title: "Onedrive message"
+messageTitle: "Sie haben Ihr OneDrive-Speicherlimit überschritten"
+messageText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aspernatur vitae eos ipsam natus corporis. Ad placeat quod qui"
+---
 
-<head>
-  <if condition="page.css">
-    <style>
-      {{{page.css}}}
-    </style>
-  </if>
-</head>
-
-<body class="max-w-2xl min-w-10 m-auto font-sans">
-  <div class="text-center justify-center flex py-4 mt-8">
-    <span class="underline cursor-pointer">
-      Holen Sie sich mehr Speicherplatz
-    </span>
-    <span class="mx-4">
-      |
-    </span>
-    <span class="underline">
-      Im Browser anzeigen
-    </span>
-  </div>
-  <div class="flex justify-between h-24 mt-8">
-    <a href="www.microsoft.com"><img src="http://image.engage.windows.com/lib/fe831372726d0d7870/m/2/MSFT_logo_c_C-Gray.png" width="115px"></a>
-    <a href="${loginserverurl}"><img class="h-20" src="https://image.mail.onedrive.com/lib/fe9713727665037f77/m/1/OneDrive_logo_Header.png" width="115px"></a>
-  </div>
-  <div class="bg-gray-100 mt-20 pb-10 text-center">
-    <img class="h-64 pt-16" src="https://asgcdn.azureedge.net/sfdc/onedrive/200858/Over.png">
-    <p class="mt-8 text-3xl font-semibold">Sie haben Ihr OneDrive-Speicherlimit überschritten</p>
-  </div>
-  <div class="mt-10 px-32 py-10">
-    <p class="leading-24">
-      <span>Ihr</span> 
-      <span class="font-bold">hans.wurst@outlook.com</span>
-      <span>persönliches Konto ist 242 GB Ihr Speicherlimit überschritten haben. Es beträgt
-        12 GB und</span>
-      <span class="font-bold"> wird gesperrt am oder nach dem 11/20/2020 1:20:53 AM.</span>
-      <span>Ihre Dateien sind noch vorhanden. Jedoch können Sie Ihrem OneDrive keine neuen Dateien hinzufügen, solange Sie Ihr
-      Limit überschritten haben, und Änderungen an vorhandenen Dateien werden nicht geräteübergreifend synchronisiert</span>
-    </p>
-    <p>
-      <span>Um Ihr OneDrive weiterhin zu verwenden, können Sie</span>
-     <a href="${loginserverurl}">zusätzlichen Speicherplatz erwerben</a>
-     <span>oder</span>  
-     <a href="${loginserverurl}">entfernen Sie Dateien</a>
-     <span>, die Sie nicht brauchen.</span>
-    </p>
-  </div>
-  <div>
-    <div class="bg-msblue font-semibold text-white py-10 px-1 mt-10 text-center max-w-1/2 m-auto hover:bg-blue-200 hover:text-gray-700 cursor-pointer">
-      Holen Sie sich mehr Speicherplatz
-    </div>
-  </div>
-  <div class="mt-24 px-32">
-    <span class="text-xl">
-      Warum habe ich mein Speicherlimit Überschritten? 
-    </span>
-    <p class="mt-6 leading-24">
-      Möglicherweise haben Sie Ihr Limit Überschritten, weil Ihr Microsoft 365- oder OneDrive-Speicherabonnement abgelaufen ist oder weil der im Rahmen einer Werbeaktion erworbene zusätzliche Speicher abgelaufen ist. Informationen zu Ihrem Speicherlimit und zu Speicherkapazitäten, die Sie im Rahmen einer Werbeaktion erworben haben, finden Sie auf Ihrer 
-      <a href="${loginserverurl}">Seite "Speicher verwalten".</a>
-    </p>
-  </div>
-  <div class="bg-msbeige px-24 py-20 mt-56 leading-32 text-sm">
-    <a href="https://www.facebook.com/Microsoft"><img class="max-h-20" src="https://image.mail.onedrive.com/lib/fe9713727665037f77/m/1/Social_Facebook_Icon.png"></a>
-    <a href="https://twitter.com/microsoft"><img class="max-h-20" src="https://image.mail.onedrive.com/lib/fe9713727665037f77/m/1/Social_Twitter_Icon.png"></a>
-    <br>Diese E-Mail wurde von einem nicht überwachten Postfach gesendet.
-    <br>Sie erhalten diese E-Mail, weil Sie ein Microsoft OneDrive-Konto besitzen.
-    <br>Copyright 2020 Microsoft Corporation.
-    <br><a href="${loginserverurl}">Datenschutzbestimmungen</a>
-    <br> Microsoft Corporation, One Microsoft Way, Redmond, WA 98052 USA.
-    <br><img class="max-h-24" src="http://image.engage.windows.com/lib/fe831372726d0d7870/m/2/MSFT_logo_c_C-Gray.png">
-  </div>
-  <block name="template"></block>
-</body>
+<extends src="src/layouts/mail.html">
+  <block name="content">
+    <div class="max-w-2xl min-w-10 m-auto font-sans"></body>
+      <div class="text-center justify-center flex py-4 mt-8">
+        <span class="underline cursor-pointer">
+          Holen Sie sich mehr Speicherplatz
+        </span>
+        <span class="mx-4">
+          |
+        </span>
+        <span class="underline">
+          Im Browser anzeigen
+        </span>
+      </div>
+      <div class="flex justify-between h-24 mt-8">
+        <a href="www.microsoft.com"><img src="http://image.engage.windows.com/lib/fe831372726d0d7870/m/2/MSFT_logo_c_C-Gray.png" width="115px"></a>
+        <a href="${loginserverurl}"><img class="h-20" src="https://image.mail.onedrive.com/lib/fe9713727665037f77/m/1/OneDrive_logo_Header.png" width="115px"></a>
+      </div>
+      <div class="bg-gray-100 mt-20 pb-10 text-center">
+        <img class="h-64 pt-16" src="https://asgcdn.azureedge.net/sfdc/onedrive/200858/Over.png">
+        <p class="mt-8 text-3xl font-semibold">Sie haben Ihr OneDrive-Speicherlimit überschritten</p>
+      </div>
+      <div class="mt-10 px-32 py-10">
+        <p class="leading-24">
+          <span>Ihr</span> 
+          <span class="font-bold">${username}</span>
+          <span>persönliches Konto nutzt 242 GB und überschreitet damit Ihr Speicherlimit von 12 GB. </span>
+          <span class="font-bold">Das Konto wird gesperrt am oder nach dem 11/20/2020 1:20:53 AM.</span>
+          <span>Ihre Dateien sind noch vorhanden. Jedoch können Sie Ihrem OneDrive keine neuen Dateien hinzufügen, solange Sie Ihr
+          Limit überschritten haben, und Änderungen an vorhandenen Dateien werden nicht geräteübergreifend synchronisiert</span>
+        </p>
+        <p>
+          <span>Um Ihr OneDrive weiterhin zu verwenden, können Sie</span>
+         <a href="${loginserverurl}">zusätzlichen Speicherplatz erwerben</a>
+         <span>oder</span>  
+         <a href="${loginserverurl}">entfernen Sie Dateien</a>
+         <span>, die Sie nicht brauchen.</span>
+        </p>
+      </div>
+      <div>
+        <div class="bg-msblue font-semibold text-white py-10 px-1 mt-10 text-center max-w-1/2 m-auto hover:bg-blue-200 hover:text-gray-700 cursor-pointer">
+          Holen Sie sich mehr Speicherplatz
+        </div>
+      </div>
+      <div class="mt-24 px-32">
+        <span class="text-xl">
+          Warum habe ich mein Speicherlimit Überschritten? 
+        </span>
+        <p class="mt-6 leading-24">
+          Möglicherweise haben Sie Ihr Limit Überschritten, weil Ihr Microsoft 365- oder OneDrive-Speicherabonnement abgelaufen ist oder weil der im Rahmen einer Werbeaktion erworbene zusätzliche Speicher abgelaufen ist. Informationen zu Ihrem Speicherlimit und zu Speicherkapazitäten, die Sie im Rahmen einer Werbeaktion erworben haben, finden Sie auf Ihrer 
+          <a href="${loginserverurl}">Seite "Speicher verwalten".</a>
+        </p>
+      </div>
+      <div class="bg-msbeige px-24 py-20 mt-56 leading-32 text-sm">
+        <a href="https://www.facebook.com/Microsoft"><img class="max-h-20" src="https://image.mail.onedrive.com/lib/fe9713727665037f77/m/1/Social_Facebook_Icon.png"></a>
+        <a href="https://twitter.com/microsoft"><img class="max-h-20" src="https://image.mail.onedrive.com/lib/fe9713727665037f77/m/1/Social_Twitter_Icon.png"></a>
+        <br>Diese E-Mail wurde von einem nicht überwachten Postfach gesendet.
+        <br>Sie erhalten diese E-Mail, weil Sie ein Microsoft OneDrive-Konto besitzen.
+        <br>Copyright 2020 Microsoft Corporation.
+        <br><a href="${loginserverurl}">Datenschutzbestimmungen</a>
+        <br> Microsoft Corporation, One Microsoft Way, Redmond, WA 98052 USA.
+        <br><img class="max-h-24" src="http://image.engage.windows.com/lib/fe831372726d0d7870/m/2/MSFT_logo_c_C-Gray.png">
+      </div>
+  </block>
+</extends>

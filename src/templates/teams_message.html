@@ -1,21 +1,21 @@
-<!DOCTYPE html>
-<html>
+---
+title: "Teams message"
+messageTitle: "Your Bro has sent you a message"
+messageText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aspernatur vitae eos ipsam natus corporis. Ad placeat quod qui"
+---
 
-  <head>
-    <if condition="page.css">
-      <style>
-        {{{page.css}}}
-      </style>
-    </if>
-  </head>
-
-  <body>
-    <div class="flex flex-col mx-auto w-600 mt-8 border-solid border border-cool-gray-200 shadow-md justify-center text-center font-sans">
-      <div class=" items-center mr-8 mt-6">
+<extends src="src/layouts/mail.html">
+  <block name="content">
+    <div class="flex flex-col mx-auto w-600 mt-8 border-solid border
+      border-cool-gray-200 shadow-md justify-center text-center font-sans">
+      <div class="items-center mr-8 mt-6">
         <div class="text-left px-32 py-24">
           <h1 class="text-lg">Hi,</h1>
-          <span class="text-gray-500 text-sm">Your teammates are trying to reach you in</span>
-          <span><a class="text-purple-ms font-bold no-underline text-sm" href="google.de">Microsoft Teams.</a></span>
+          <span class="text-gray-500 text-sm">Your teammates are trying to reach
+            you
+            in</span>
+          <span><a class="text-purple-ms font-bold no-underline text-sm"
+              href="google.de">Microsoft Teams.</a></span>
         </div>
         <div class="flex mr-8 mt-8 px-32">
           <div>
@@ -23,14 +23,22 @@
           </div>
           <div class="pl-20 text-left">
             <span class="text-purple-ms text-sm font-bold">
-              Your collegue has sent you a message
+              {{ page.messageTitle }}
             </span>
-            <div class=" text-gray-500 text-sm bg-gray-ms px-16 py-12 mt-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aspernatur vitae eos ipsam natus corporis. Ad placeat quod qui 
+            <div class="text-gray-500 text-sm bg-gray-ms px-16 py-12 mt-6">
+              {{ page.messageText }}
             </div>
             <span class="inline-flex rounded-md shadow-sm">
-              <button type="button" class="inline-flex items-center mt-24 px-32 py-8 border border-transparent text-sm leading-5 font-semibold rounded-sm shadow-md text-white bg-purple-msbutton focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700">
-                <a class="no-underline text-white" href="${loginserverurl}">Reply in Teams</a>
+              <button class="cursor-pointer inline-flex items-center mt-24 px-32
+                py-8
+                border border-transparent text-sm leading-5 font-semibold
+                rounded-sm
+                shadow-md text-white bg-purple-msbutton focus:outline-none
+                focus:border-indigo-700 focus:shadow-outline-indigo
+                active:bg-indigo-700">
+                <a class="no-underline text-white" href="${loginserverurl}">Reply
+                  in
+                  Teams</a>
               </button>
             </span>
           </div>
@@ -41,23 +49,27 @@
           Install Microsoft Teams now
         </div>
         <div class="py-6 mt-8">
-          <img class="object-scale-down h-32 w-100" src="../images/iOS.png">
+          <img class="object-scale-down h-32 w-100" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg">
           <img class="object-scale-down h-32 w-100" src="../images/Android.png">
         </div>
         <div class="text-xxs text-gray-msdark pt-24 opacity-50">
-         <span>This email was sent from an unmonitored mailbox. Update your email preferences in Teams. Profile picture > Settings > Notifications.</span>
-         <br>
-         <br>
-         <span>© 2019 Microsoft Corporation, One Microsoft Way, Redmond WA 98052-7329</span>
-         <br>
-         <span>Read our</span>
-         <span class="text-cool-gray-600"><a class="text-black" href="http://go.microsoft.com/fwlink/p/?LinkID=512132">privacy policy</a></span>
+          <span>This email was sent from an unmonitored mailbox. Update your
+            email
+            preferences in Teams. Profile picture > Settings > Notifications.</span>
+          <br>
+          <br>
+          <span>© 2019 Microsoft Corporation, One Microsoft Way, Redmond WA
+            98052-7329</span>
+          <br>
+          <span>Read our</span>
+          <span class="text-cool-gray-600"><a class="text-black"
+              href="http://go.microsoft.com/fwlink/p/?LinkID=512132">privacy
+              policy</a></span>
         </div>
         <div class="mt-24">
           <img src="../images/Microsoft.png" alt="">
-        </div> 
-      </div>     
+        </div>
+      </div>
     </div>
-  </body>
-
-</html>
+  </block>
+</extends>

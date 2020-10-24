@@ -1,5 +1,5 @@
-<!DOCTYPE {{{ page.doctype || 'html' }}}>
-<html lang="{{ page.language || 'en' }}" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<!DOCTYPE html>
+<html>
 <head>
   <meta charset="{{ page.charset || 'utf-8' }}">
   <meta name="x-apple-disable-message-reformatting">
@@ -23,12 +23,6 @@
   </if>
   <block name="head"></block>
 </head>
-<body class="{{ page.bodyClass || '' }}">
-  <if condition="page.preheader">
-    <div class="hidden">{{ page.preheader }}</div>
-  </if>
-  <div role="article" aria-roledescription="email" aria-label="{{{ page.title || '' }}}" lang="{{ page.language || 'en'}}">
-    <block name="template"></block>
-  </div>
+<body>
+  <block name="content"></block>
 </body>
-</html>

@@ -20,15 +20,15 @@ module.exports = {
     templates: {
       source: 'src/templates',
       destination: {
-        path: 'build_local',
+        path: 'build_local'
       },
       assets: {
         source: 'src/assets/images',
-        destination: 'images',
+        destination: 'images'
       },
     },
     tailwind: {
-      css: 'src/assets/css/main.css',
-    },
-  },
+      css: 'src/assets/css/main.css'
+    }
+  }
 }

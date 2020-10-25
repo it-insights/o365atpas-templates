@@ -8,6 +8,7 @@ module.exports = {
         inherit: 'inherit',
         msblue: '#0078d7',
         msbeige: '#f0f0f0',
+        msgray: '#FAF9F8',
         gray: {
           50: '#f9fafb',
           100: '#f4f5f7',
